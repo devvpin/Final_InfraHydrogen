@@ -1,0 +1,25 @@
+/* Index page specific styles: neutral background, better font, and light green buttons */
+
+.home-page {
+  background: transparent; /* do not use colored backgrounds on the home page */
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #000;
+}
+
+/* Make buttons light green throughout the home page when a utility class is used */
+.home-page .btn-light-green,
+.home-page button,
+.home-page .button {
+  background-color: rgba(16,163,74,0.12) !important;
+  color: rgb(16,163,74) !important;
+  border-color: rgba(16,163,74,0.2) !important;
+}
+
+/* Keep cards and sections neutral */
+.home-page section { background: transparent !important; }
+
+/* Headings stronger font */
+.home-page h1, .home-page h2, .home-page h3 { font-family: 'Inter', system-ui, sans-serif; }
+
+/* Small tweak for logo spacing */
+.home-page .logo { margin-right: 0.5rem; }

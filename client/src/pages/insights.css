@@ -1,0 +1,38 @@
+/* Page-specific styles for Insights */
+
+.insights-page {
+  --card-accent: linear-gradient(90deg, rgba(16,185,129,0.08), rgba(59,130,246,0.06));
+}
+
+.insights-page .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Header gradient emphasized */
+.insights-page h1 {
+  letter-spacing: -0.02em;
+}
+
+/* Resource card tweaks */
+.insights-page .card {
+  background: linear-gradient(180deg, rgba(7,10,23,0.6), rgba(7,10,23,0.5));
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.insights-page .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+}
+
+/* Smaller badge sizes for lists */
+.insights-page .badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.4rem;
+}
+
+@media (max-width: 1024px) {
+  .insights-page .grid {
+    grid-template-columns: 1fr;
+  }
+}
